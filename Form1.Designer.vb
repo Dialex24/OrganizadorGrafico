@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -32,6 +32,7 @@ Partial Class Form1
         Me.chkUrgente = New System.Windows.Forms.CheckBox()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.btnAgregar = New System.Windows.Forms.Button()
+        Me.btnCrearGrupo = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -39,66 +40,74 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("MV Boli", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(297, 34)
+        Me.Label1.Location = New System.Drawing.Point(223, 28)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(189, 52)
+        Me.Label1.Size = New System.Drawing.Size(150, 41)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "AGENDA"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(268, 107)
+        Me.Label2.Location = New System.Drawing.Point(201, 87)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(45, 16)
+        Me.Label2.Size = New System.Drawing.Size(37, 13)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Fecha"
         '
         'txtFecha
         '
-        Me.txtFecha.Location = New System.Drawing.Point(341, 100)
+        Me.txtFecha.Location = New System.Drawing.Point(256, 81)
+        Me.txtFecha.Margin = New System.Windows.Forms.Padding(2)
         Me.txtFecha.Name = "txtFecha"
-        Me.txtFecha.Size = New System.Drawing.Size(180, 22)
+        Me.txtFecha.Size = New System.Drawing.Size(136, 20)
         Me.txtFecha.TabIndex = 2
         '
         'txtLugar
         '
-        Me.txtLugar.Location = New System.Drawing.Point(341, 137)
+        Me.txtLugar.Location = New System.Drawing.Point(256, 111)
+        Me.txtLugar.Margin = New System.Windows.Forms.Padding(2)
         Me.txtLugar.Name = "txtLugar"
-        Me.txtLugar.Size = New System.Drawing.Size(180, 22)
+        Me.txtLugar.Size = New System.Drawing.Size(136, 20)
         Me.txtLugar.TabIndex = 4
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(268, 144)
+        Me.Label3.Location = New System.Drawing.Point(201, 117)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(41, 16)
+        Me.Label3.Size = New System.Drawing.Size(34, 13)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Lugar"
         '
         'txtHora
         '
-        Me.txtHora.Location = New System.Drawing.Point(341, 174)
+        Me.txtHora.Location = New System.Drawing.Point(256, 141)
+        Me.txtHora.Margin = New System.Windows.Forms.Padding(2)
         Me.txtHora.Name = "txtHora"
-        Me.txtHora.Size = New System.Drawing.Size(180, 22)
+        Me.txtHora.Size = New System.Drawing.Size(136, 20)
         Me.txtHora.TabIndex = 6
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(268, 181)
+        Me.Label4.Location = New System.Drawing.Point(201, 147)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(37, 16)
+        Me.Label4.Size = New System.Drawing.Size(30, 13)
         Me.Label4.TabIndex = 5
         Me.Label4.Text = "Hora"
         '
         'chkUrgente
         '
         Me.chkUrgente.AutoSize = True
-        Me.chkUrgente.Location = New System.Drawing.Point(371, 213)
+        Me.chkUrgente.Location = New System.Drawing.Point(278, 173)
+        Me.chkUrgente.Margin = New System.Windows.Forms.Padding(2)
         Me.chkUrgente.Name = "chkUrgente"
-        Me.chkUrgente.Size = New System.Drawing.Size(77, 20)
+        Me.chkUrgente.Size = New System.Drawing.Size(64, 17)
         Me.chkUrgente.TabIndex = 7
         Me.chkUrgente.Text = "Urgente"
         Me.chkUrgente.UseVisualStyleBackColor = True
@@ -106,27 +115,39 @@ Partial Class Form1
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(104, 252)
+        Me.DataGridView1.Location = New System.Drawing.Point(83, 240)
+        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(2)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.RowHeadersWidth = 51
         Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(613, 167)
+        Me.DataGridView1.Size = New System.Drawing.Size(460, 136)
         Me.DataGridView1.TabIndex = 8
         '
         'btnAgregar
         '
-        Me.btnAgregar.Location = New System.Drawing.Point(608, 113)
+        Me.btnAgregar.Location = New System.Drawing.Point(456, 81)
+        Me.btnAgregar.Margin = New System.Windows.Forms.Padding(2)
         Me.btnAgregar.Name = "btnAgregar"
-        Me.btnAgregar.Size = New System.Drawing.Size(134, 79)
+        Me.btnAgregar.Size = New System.Drawing.Size(101, 38)
         Me.btnAgregar.TabIndex = 9
         Me.btnAgregar.Text = "Agregrar Cita"
         Me.btnAgregar.UseVisualStyleBackColor = True
         '
+        'btnCrearGrupo
+        '
+        Me.btnCrearGrupo.Location = New System.Drawing.Point(456, 136)
+        Me.btnCrearGrupo.Name = "btnCrearGrupo"
+        Me.btnCrearGrupo.Size = New System.Drawing.Size(101, 40)
+        Me.btnCrearGrupo.TabIndex = 10
+        Me.btnCrearGrupo.Text = "Agregar Grupo o Etiqueta"
+        Me.btnCrearGrupo.UseVisualStyleBackColor = True
+        '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(604, 398)
+        Me.Controls.Add(Me.btnCrearGrupo)
         Me.Controls.Add(Me.btnAgregar)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.chkUrgente)
@@ -137,6 +158,7 @@ Partial Class Form1
         Me.Controls.Add(Me.txtFecha)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Form1"
         Me.Text = "Agenda"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -155,4 +177,5 @@ Partial Class Form1
     Friend WithEvents chkUrgente As CheckBox
     Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents btnAgregar As Button
+    Friend WithEvents btnCrearGrupo As Button
 End Class
